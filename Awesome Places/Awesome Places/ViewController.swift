@@ -20,6 +20,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var starsSlider: UISlider!
     @IBOutlet weak var numberOfStarsLabel: UILabel!
 
+    let directory = Directory()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -40,6 +42,23 @@ class ViewController: UIViewController {
     }
 
     @IBAction func saveForm(_ sender: UIBarButtonItem) {
+
+        guard let name = placeNameTextField.text else { return }
+        guard let address = addressTextField.text else { return }
+        guard let phone = phoneNumberTextField.text else { return }
+        guard let latitude = latitudeTextField.text, let latDouble = Double(latitude) else { return }
+        guard let longitude = longitudeTextField.text, let longDouble = Double(longitude) else { return }
+        guard let websiteUrlString = websiteTextField.text else { return }
+        let websiteURL = URL(string: websiteUrlString)
+        let note = starsSlider.value
+
+        let place = Place(name: name, latitude: latDouble, longitude: longDouble, address: address, phoneNumber: phone, website: websiteURL, wikipedia: nil, stars: note, numberOfReviews: 1, origin: .local)
+
+        print("Le lieu \(place.name) a été créé")
+
+        directory.add(place)
+
+        print(directory.allPlaces)
     }
 }
 
