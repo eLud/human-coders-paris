@@ -10,22 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var sourceTextField: UITextField!
-    @IBOutlet weak var destinationLabel: UILabel!
+    @IBOutlet weak var placeNameTextField: UITextField!
+    @IBOutlet weak var latitudeTextField: UITextField!
+    @IBOutlet weak var longitudeTextField: UITextField!
+    @IBOutlet weak var iAmHereSwitch: UISwitch!
+    @IBOutlet weak var addressTextField: UITextField!
+    @IBOutlet weak var phoneNumberTextField: UITextField!
+    @IBOutlet weak var websiteTextField: UITextField!
+    @IBOutlet weak var starsSlider: UISlider!
+    @IBOutlet weak var numberOfStarsLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func demo(_ sender: UIButton) {
-        destinationLabel.text = sourceTextField.text
+    @IBAction func cancel(_ sender: Any) {
     }
-
+    
+    @IBAction func saveForm(_ sender: UIBarButtonItem) {
+    }
 }
 
