@@ -29,9 +29,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func cancel(_ sender: Any) {
+    @IBAction func sliderValueChanged(_ sender: UISlider) {
+
+        let value = Int(sender.value)
+        sender.value = Float(value)
+        numberOfStarsLabel.text = "\(value)"
     }
-    
+
+    @IBAction func cancel(_ sender: UIBarButtonItem) {
+    }
+
     @IBAction func saveForm(_ sender: UIBarButtonItem) {
     }
 }
