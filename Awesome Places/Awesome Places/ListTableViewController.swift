@@ -15,12 +15,15 @@ class ListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        for i in 0...10 {
-            let place = Place(name: "Test \(i)", address: "Test adress \(i)", phoneNumber: "0000000", stars: 2.6, numberOfReviews: 1)
-            directory.add(place)
-        }
+        let center = NotificationCenter.default
+        center.addObserver(self, selector: #selector(refreshData), name: Notification.Name("Model_Updated"), object: nil)
+
 
         print("Liste affichée")
+    }
+
+    func refreshData() {
+        tableView.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
