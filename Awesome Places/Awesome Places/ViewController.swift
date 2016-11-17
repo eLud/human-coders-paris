@@ -39,6 +39,8 @@ class ViewController: UIViewController {
     }
 
     @IBAction func cancel(_ sender: UIBarButtonItem) {
+
+        dismiss(animated: true, completion: nil)
     }
 
     @IBAction func saveForm(_ sender: UIBarButtonItem) {
