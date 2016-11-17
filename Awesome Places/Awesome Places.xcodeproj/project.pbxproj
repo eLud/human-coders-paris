@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33A3CF4F1DDDB90E00713B28 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CF4E1DDDB90E00713B28 /* ListTableViewController.swift */; };
 		33BACB4E1DDB6B5B00F4ADBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BACB4D1DDB6B5B00F4ADBC /* AppDelegate.swift */; };
 		33BACB501DDB6B5B00F4ADBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BACB4F1DDB6B5B00F4ADBC /* ViewController.swift */; };
 		33BACB531DDB6B5B00F4ADBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33BACB511DDB6B5B00F4ADBC /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33A3CF4E1DDDB90E00713B28 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		33BACB4A1DDB6B5B00F4ADBC /* Awesome Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awesome Places.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33BACB4D1DDB6B5B00F4ADBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33BACB4F1DDB6B5B00F4ADBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +41,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33A3CF501DDDB92A00713B28 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				33BACB5F1DDC7B8B00F4ADBC /* Place.swift */,
+				33BACB611DDC7BB200F4ADBC /* Directory.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		33A3CF511DDDB93600713B28 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				33BACB4F1DDB6B5B00F4ADBC /* ViewController.swift */,
+				33A3CF4E1DDDB90E00713B28 /* ListTableViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		33BACB411DDB6B5B00F4ADBC = {
 			isa = PBXGroup;
 			children = (
@@ -59,9 +79,8 @@
 			isa = PBXGroup;
 			children = (
 				33BACB4D1DDB6B5B00F4ADBC /* AppDelegate.swift */,
-				33BACB5F1DDC7B8B00F4ADBC /* Place.swift */,
-				33BACB611DDC7BB200F4ADBC /* Directory.swift */,
-				33BACB4F1DDB6B5B00F4ADBC /* ViewController.swift */,
+				33A3CF501DDDB92A00713B28 /* Models */,
+				33A3CF511DDDB93600713B28 /* Controllers */,
 				33BACB511DDB6B5B00F4ADBC /* Main.storyboard */,
 				33BACB541DDB6B5B00F4ADBC /* Assets.xcassets */,
 				33BACB561DDB6B5B00F4ADBC /* LaunchScreen.storyboard */,
@@ -146,6 +165,7 @@
 				33BACB601DDC7B8B00F4ADBC /* Place.swift in Sources */,
 				33BACB501DDB6B5B00F4ADBC /* ViewController.swift in Sources */,
 				33BACB4E1DDB6B5B00F4ADBC /* AppDelegate.swift in Sources */,
+				33A3CF4F1DDDB90E00713B28 /* ListTableViewController.swift in Sources */,
 				33BACB621DDC7BB200F4ADBC /* Directory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -273,6 +293,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tectec.training.humanCoders.Awesome-Places";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = "";
 			};
 			name = Debug;
@@ -287,6 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.tectec.training.humanCoders.Awesome-Places";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WARNING_CFLAGS = "";
 			};
 			name = Release;
@@ -310,6 +332,7 @@
 				33BACB5E1DDB6B5B00F4ADBC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
