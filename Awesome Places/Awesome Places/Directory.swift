@@ -26,6 +26,9 @@ class Directory {
         let result = places.insert(place)
         if result.inserted == false {
             print(place.name + " is already here!")
+        } else {
+            let center = NotificationCenter.default
+            center.post(name: Notification.Name("Model_Updated"), object: self)
         }
     }
 }
