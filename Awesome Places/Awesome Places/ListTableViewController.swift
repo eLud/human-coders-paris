@@ -15,6 +15,7 @@ class ListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // On observe les notifications Model_Updated
         let center = NotificationCenter.default
         center.addObserver(self, selector: #selector(refreshData), name: Notification.Name("Model_Updated"), object: nil)
 
