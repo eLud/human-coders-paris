@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var starsSlider: UISlider!
     @IBOutlet weak var numberOfStarsLabel: UILabel!
 
-    let directory = Directory()
+    let directory = Directory.instance
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +61,7 @@ class ViewController: UIViewController {
         directory.add(place)
 
         print(directory.allPlaces)
+
+        dismiss(animated: true, completion: nil)
     }
 }
-

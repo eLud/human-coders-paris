@@ -10,7 +10,13 @@ import Foundation
 
 class Directory {
 
+    static let instance = Directory()
+
     private var places: Set<Place> = []
+
+    private init() {
+
+    }
 
     var allPlaces: [Place] {
         return Array(places)

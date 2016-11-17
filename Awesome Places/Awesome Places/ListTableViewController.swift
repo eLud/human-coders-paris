@@ -10,12 +10,12 @@ import UIKit
 
 class ListTableViewController: UITableViewController {
 
-    let directory = Directory()
-
+    let directory = Directory.instance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        for i in 0...100 {
+        for i in 0...10 {
             let place = Place(name: "Test \(i)", address: "Test adress \(i)", phoneNumber: "0000000", stars: 2.6, numberOfReviews: 1)
             directory.add(place)
         }
