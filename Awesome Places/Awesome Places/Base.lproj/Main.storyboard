@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Segues with Peek and Pop" minToolsVersion="7.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -197,7 +198,10 @@
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.7019608021" green="0.7019608021" blue="0.7019608021" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
-                                    <segue destination="zTt-AD-8fs" kind="show" id="YoT-N5-ODD"/>
+                                    <segue destination="zTt-AD-8fs" kind="show" id="YoT-N5-ODD">
+                                        <segue key="commit" inheritsFrom="parent" id="jIS-jQ-sYw"/>
+                                        <segue key="preview" inheritsFrom="commit" id="fNx-kp-3HM"/>
+                                    </segue>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -460,4 +464,7 @@
     <resources>
         <image name="map" width="24" height="24"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="YoT-N5-ODD"/>
+    </inferredMetricsTieBreakers>
 </document>
