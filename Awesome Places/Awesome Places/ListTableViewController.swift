@@ -31,19 +31,26 @@ class ListTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+
+        // On récupère le nombre d'éléments à afficher dans le modèle, et on les donne au Table View
         return directory.allPlaces.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+
+        // On récupère une cellule réutilisable (potentiellement recyclée) correspondant à l'indetifiant placeCell, qui correspond à l'indentifiant chois pour la cellule dans le storyboard
         let cell = tableView.dequeueReusableCell(withIdentifier: "placeCell", for: indexPath)
 
+        // On identifie le lieu à afficher pour cette cellule, grace à son numero de ligne (indexPath.row)
         let place = directory.allPlaces[indexPath.row]
 
+        // On configure la cellule avec les infos du lieu
         cell.textLabel?.text = place.name
         cell.detailTextLabel?.text = place.address
 
         print("Just returned a cell")
 
+        // On retourne la cellule au Table View pour qu'il l'affiche
         return cell
     }
 
