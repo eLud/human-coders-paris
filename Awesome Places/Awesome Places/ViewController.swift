@@ -73,7 +73,7 @@ class ViewController: UIViewController {
             self.coordinatesStackView.isHidden = sender.isOn
         }
 
-        UIView.animate(withDuration: 5, animations: animations)
+        UIView.animate(withDuration: 0.2, animations: animations)
 
     }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3375D8F91DDF204600871C26 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3375D8F81DDF204600871C26 /* MapKit.framework */; };
 		33A3CF4F1DDDB90E00713B28 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CF4E1DDDB90E00713B28 /* ListTableViewController.swift */; };
 		33A3CF531DDE0C5D00713B28 /* PlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CF521DDE0C5D00713B28 /* PlaceDetailsViewController.swift */; };
 		33BACB4E1DDB6B5B00F4ADBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BACB4D1DDB6B5B00F4ADBC /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3375D8F81DDF204600871C26 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		33A3CF4E1DDDB90E00713B28 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
 		33A3CF521DDE0C5D00713B28 /* PlaceDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewController.swift; sourceTree = "<group>"; };
 		33BACB4A1DDB6B5B00F4ADBC /* Awesome Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awesome Places.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,12 +39,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3375D8F91DDF204600871C26 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3375D8F71DDF204600871C26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3375D8F81DDF204600871C26 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		33A3CF501DDDB92A00713B28 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +78,7 @@
 			children = (
 				33BACB4C1DDB6B5B00F4ADBC /* Awesome Places */,
 				33BACB4B1DDB6B5B00F4ADBC /* Products */,
+				3375D8F71DDF204600871C26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +138,11 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = A7SGM6JEMA;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
