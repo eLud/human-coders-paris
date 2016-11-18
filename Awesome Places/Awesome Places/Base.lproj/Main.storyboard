@@ -146,13 +146,13 @@
                                         <rect key="frame" x="0.0" y="229" width="696" height="30"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bxX-6d-qKf">
-                                                <rect key="frame" x="0.0" y="0.0" width="37" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="33" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="0.0" maxValue="5" translatesAutoresizingMaskIntoConstraints="NO" id="uQ8-Sm-WAW">
-                                                <rect key="frame" x="43" y="0.0" width="632" height="31"/>
+                                                <rect key="frame" x="39" y="0.0" width="636" height="31"/>
                                                 <connections>
                                                     <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Dcd-a7-sw6"/>
                                                 </connections>
@@ -224,6 +224,7 @@
                     <connections>
                         <outlet property="addressTextField" destination="yBL-88-Fpj" id="eXP-VQ-w0D"/>
                         <outlet property="coordinatesStackView" destination="HKq-bV-rJ6" id="QF2-DH-qFv"/>
+                        <outlet property="downloadedImageView" destination="HaH-UV-RuF" id="W7W-eH-PN6"/>
                         <outlet property="iAmHereSwitch" destination="oO7-ka-xI0" id="TeS-tQ-QF6"/>
                         <outlet property="latitudeTextField" destination="DhF-FZ-wcL" id="V2S-4l-dcG"/>
                         <outlet property="longitudeTextField" destination="rPE-2a-D4G" id="DTW-zh-0rq"/>
@@ -409,6 +410,7 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="mapView" destination="FZX-9y-5Lj" id="ErG-tN-Wh3"/>
                         <outlet property="placeName" destination="zsL-k4-Qza" id="125-Hi-Csi"/>
                     </connections>
                 </viewController>
