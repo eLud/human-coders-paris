@@ -20,13 +20,28 @@ class ViewController: UIViewController {
     @IBOutlet weak var starsSlider: UISlider!
     @IBOutlet weak var numberOfStarsLabel: UILabel!
     @IBOutlet weak var coordinatesStackView: UIStackView!
+    @IBOutlet weak var downloadedImageView: UIImageView!
 
     let directory = Directory.instance
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+
+        guard let url = URL(string: "https://upload.wikimedia.org/wikipedia/commons/4/4b/Jonathan_Swift_by_Charles_Jervas_detail.jpg") else { return }
+
+        let compeltion = { (data: Data?, resp: URLResponse?, error: Error?) -> Void in
+            guard let d = data, let image = UIImage(data: d) else { return }
+            DispatchQueue.main.async {
+                self.downloadedImageView.image = image
+            }
+        }
+
+        let imageTask = URLSession.shared.dataTask(with: url, completionHandler: compeltion)
+
+        imageTask.resume()
     }
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
