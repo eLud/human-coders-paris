@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		33A3CF4F1DDDB90E00713B28 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CF4E1DDDB90E00713B28 /* ListTableViewController.swift */; };
+		33A3CF531DDE0C5D00713B28 /* PlaceDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CF521DDE0C5D00713B28 /* PlaceDetailsViewController.swift */; };
 		33BACB4E1DDB6B5B00F4ADBC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BACB4D1DDB6B5B00F4ADBC /* AppDelegate.swift */; };
 		33BACB501DDB6B5B00F4ADBC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33BACB4F1DDB6B5B00F4ADBC /* ViewController.swift */; };
 		33BACB531DDB6B5B00F4ADBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33BACB511DDB6B5B00F4ADBC /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		33A3CF4E1DDDB90E00713B28 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
+		33A3CF521DDE0C5D00713B28 /* PlaceDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceDetailsViewController.swift; sourceTree = "<group>"; };
 		33BACB4A1DDB6B5B00F4ADBC /* Awesome Places.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awesome Places.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		33BACB4D1DDB6B5B00F4ADBC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		33BACB4F1DDB6B5B00F4ADBC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				33BACB4F1DDB6B5B00F4ADBC /* ViewController.swift */,
 				33A3CF4E1DDDB90E00713B28 /* ListTableViewController.swift */,
+				33A3CF521DDE0C5D00713B28 /* PlaceDetailsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A3CF531DDE0C5D00713B28 /* PlaceDetailsViewController.swift in Sources */,
 				33BACB601DDC7B8B00F4ADBC /* Place.swift in Sources */,
 				33BACB501DDB6B5B00F4ADBC /* ViewController.swift in Sources */,
 				33BACB4E1DDB6B5B00F4ADBC /* AppDelegate.swift in Sources */,

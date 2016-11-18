@@ -94,14 +94,27 @@ class ListTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+
+        if segue.identifier == "showPlaceDetails" {
+
+            guard let destination = segue.destination as? PlaceDetailsViewController else { return }
+
+            //Identifier la place à passer
+            guard let cell = sender as? UITableViewCell else { return }
+            guard let indexPath = tableView.indexPath(for: cell) else { return }
+
+            let row = indexPath.row
+            let place = directory.allPlaces[row]
+
+            // Passe la place
+            destination.placeToDisplay = place
+
+        } else if segue.identifier == "showForm" {
+
+        }
     }
-    */
 
 }

@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var websiteTextField: UITextField!
     @IBOutlet weak var starsSlider: UISlider!
     @IBOutlet weak var numberOfStarsLabel: UILabel!
+    @IBOutlet weak var coordinatesStackView: UIStackView!
 
     let directory = Directory.instance
 
@@ -42,6 +43,7 @@ class ViewController: UIViewController {
 
         dismiss(animated: true, completion: nil)
     }
+// https://github.com/eLud/human-coders-paris
 
     @IBAction func saveForm(_ sender: UIBarButtonItem) {
 
@@ -63,5 +65,15 @@ class ViewController: UIViewController {
         print(directory.allPlaces)
 
         dismiss(animated: true, completion: nil)
+    }
+
+    @IBAction func switchValueChanged(_ sender: UISwitch) {
+
+        let animations = { () -> Void in
+            self.coordinatesStackView.isHidden = sender.isOn
+        }
+
+        UIView.animate(withDuration: 5, animations: animations)
+
     }
 }
