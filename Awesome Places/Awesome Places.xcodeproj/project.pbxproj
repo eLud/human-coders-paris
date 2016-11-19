@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3335765F1DE0C2D0008935E2 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3335765E1DE0C2D0008935E2 /* SwiftyJSON.swift */; };
+		333576611DE0C35C008935E2 /* location_api_example.json in Resources */ = {isa = PBXBuildFile; fileRef = 333576601DE0C35C008935E2 /* location_api_example.json */; };
 		3375D8F91DDF204600871C26 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3375D8F81DDF204600871C26 /* MapKit.framework */; };
 		3375D8FB1DDF434900871C26 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3375D8FA1DDF434900871C26 /* CoreLocation.framework */; };
 		33A3CF4F1DDDB90E00713B28 /* ListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33A3CF4E1DDDB90E00713B28 /* ListTableViewController.swift */; };
@@ -21,6 +23,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3335765E1DE0C2D0008935E2 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		333576601DE0C35C008935E2 /* location_api_example.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = location_api_example.json; sourceTree = "<group>"; };
 		3375D8F81DDF204600871C26 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		3375D8FA1DDF434900871C26 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		33A3CF4E1DDDB90E00713B28 /* ListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3335765D1DE0C2C4008935E2 /* External */ = {
+			isa = PBXGroup;
+			children = (
+				3335765E1DE0C2D0008935E2 /* SwiftyJSON.swift */,
+			);
+			name = External;
+			sourceTree = "<group>";
+		};
 		3375D8F71DDF204600871C26 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -61,6 +73,7 @@
 		33A3CF501DDDB92A00713B28 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				333576601DE0C35C008935E2 /* location_api_example.json */,
 				33BACB5F1DDC7B8B00F4ADBC /* Place.swift */,
 				33BACB611DDC7BB200F4ADBC /* Directory.swift */,
 			);
@@ -97,6 +110,7 @@
 		33BACB4C1DDB6B5B00F4ADBC /* Awesome Places */ = {
 			isa = PBXGroup;
 			children = (
+				3335765D1DE0C2C4008935E2 /* External */,
 				33BACB4D1DDB6B5B00F4ADBC /* AppDelegate.swift */,
 				33A3CF501DDDB92A00713B28 /* Models */,
 				33A3CF511DDDB93600713B28 /* Controllers */,
@@ -175,6 +189,7 @@
 			files = (
 				33BACB581DDB6B5B00F4ADBC /* LaunchScreen.storyboard in Resources */,
 				33BACB551DDB6B5B00F4ADBC /* Assets.xcassets in Resources */,
+				333576611DE0C35C008935E2 /* location_api_example.json in Resources */,
 				33BACB531DDB6B5B00F4ADBC /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -191,6 +206,7 @@
 				33BACB501DDB6B5B00F4ADBC /* ViewController.swift in Sources */,
 				33BACB4E1DDB6B5B00F4ADBC /* AppDelegate.swift in Sources */,
 				33A3CF4F1DDDB90E00713B28 /* ListTableViewController.swift in Sources */,
+				3335765F1DE0C2D0008935E2 /* SwiftyJSON.swift in Sources */,
 				33BACB621DDC7BB200F4ADBC /* Directory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

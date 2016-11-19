@@ -1,0 +1,63 @@
+{
+	"markers": [{
+		"coordinates": {
+			"latitude": 48.886918,
+			"longitude": -2.343404
+		},
+		"monumentName": "Sacré-Cœur",
+		"address": "35 Rue du Chevalier de la Barre, 75018 Paris",
+		"phoneNumber": "01 53 41 89 00",
+		"website": "http://sacre-coeur-montmartre.com",
+		"reviews": 2281,
+		"stars": 4.5,
+		"wikipediaLink": "https://fr.wikipedia.org/wiki/Basilique_du_Sacré-Cœur_de_Montmartre"
+	}, {
+		"coordinates": {
+			"latitude": 48.8737903,
+			"longitude": -2.295339
+		},
+		"monumentName": "Arc de Triomphe",
+		"address": "Place Charles de Gaulle, 75008 Paris",
+		"phoneNumber": "01 55 37 73 77",
+		"website": "http://www.paris-arc-de-triomphe.fr",
+		"reviews": 3788,
+		"stars": 4.5,
+		"wikipediaLink": "https://fr.wikipedia.org/wiki/Arc_de_triomphe_de_l%27Étoile"
+	}, {
+		"coordinates": {
+			"latitude": 48.836324,
+			"longitude": -2.332589
+		},
+		"monumentName": "Les Catacombes de Paris",
+		"address": "1 Avenue du Colonel Henri Rol-Tanguy, 75014 Paris",
+		"phoneNumber": "01 43 22 47 63",
+		"website": "http://www.catacombes.paris.fr",
+		"reviews": 759,
+		"stars": 4.3,
+		"wikipediaLink": "https://fr.wikipedia.org/wiki/Catacombes_de_Paris"
+	}, {
+		"coordinates": {
+			"latitude": 48.863833,
+			"longitude": -2.352502
+		},
+		"monumentName": "Le Centre Pompidou",
+		"address": "Place Georges-Pompidou, 75004 Paris",
+		"phoneNumber": "01 44 78 12 33",
+		"website": "centrepompidou.fr",
+		"reviews": 1871,
+		"stars": 4.2,
+		"wikipediaLink": "https://fr.wikipedia.org/wiki/Centre_national_d%27art_et_de_culture_Georges-Pompidou"
+	}, {
+		"coordinates": {
+			"latitude": 48.849210,
+			"longitude": -2.347009
+		},
+		"monumentName": "Panthéon",
+		"address": "Place du Panthéon, 75005 Paris",
+		"phoneNumber": "01 44 32 18 00",
+		"website": "http://www.paris-pantheon.fr",
+		"reviews": 823,
+		"stars": 4.3,
+		"wikipediaLink": "https://fr.wikipedia.org/wiki/Panthéon_(Paris)"
+	}]
+}
